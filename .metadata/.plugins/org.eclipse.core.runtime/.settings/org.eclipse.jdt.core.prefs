@@ -1,0 +1,15 @@
+eclipse.preferences.version=1
+org.eclipse.jdt.core.classpathVariable.ASPECTJRT_LIB=D\:/\u5927\u4E8C\u4E0B\u5B66\u671F/\u5B9E\u4E60java/\u5F00\u53D1\u73AF\u5883/eclipse/plugins/org.aspectj.runtime_1.9.0.201805281636.jar
+org.eclipse.jdt.core.classpathVariable.ECLIPSE_HOME=D\:/\u5927\u4E8C\u4E0B\u5B66\u671F/\u5B9E\u4E60java/\u5F00\u53D1\u73AF\u5883/eclipse/
+org.eclipse.jdt.core.classpathVariable.JRE_LIB=C\:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar
+org.eclipse.jdt.core.classpathVariable.JRE_SRC=C\:/Program Files/Java/jdk1.8.0_191/src.zip
+org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=
+org.eclipse.jdt.core.classpathVariable.JUNIT_HOME=D\:/\u5927\u4E8C\u4E0B\u5B66\u671F/\u5B9E\u4E60java/\u5F00\u53D1\u73AF\u5883/eclipse/plugins/org.junit_4.12.0.v201504281640/
+org.eclipse.jdt.core.classpathVariable.M2_REPO=C\:/Users/a1521/.m2/repository
+org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled
+org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
+org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.8
+org.eclipse.jdt.core.compiler.compliance=1.8
+org.eclipse.jdt.core.compiler.problem.assertIdentifier=error
+org.eclipse.jdt.core.compiler.problem.enumIdentifier=error
+org.eclipse.jdt.core.compiler.source=1.8

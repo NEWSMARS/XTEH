@@ -1,0 +1,77 @@
+package scheduler;
+
+import PCB.PCB;
+import queue.ReadyQueue;
+
+public class ShortestJobFirst {
+	private int time_now; 		//当前时间       
+	public ReadyQueue rqueue;	//设置一个空的就绪队列
+
+	public ShortestJobFirst() {
+		time_now = 0;    		//初始时间为0
+		rqueue = new ReadyQueue();
+	}
+	public ReadyQueue rqueueInit(PCB pcb ) {	 	//初始化就绪队列，将进程列表转换为待执行的就绪队列（双向循环链表）,进程还未开始执行
+		PCB	 temp=pcb;	//temp为next
+		int i=1;
+		PCB temp2 = rqueue.head.getNext_run();
+		while(temp2.getTime_slice()>=temp.getTime_slice()) {
+			rqueue.add_index(pcb, i);
+		i++;
+		temp2=temp2.getNext_run();
+		}
+		return rqueue;	
+	}
+	
+	public ReadyQueue run(){											//只执行当前就绪队列中的第一个pcb
+		if(rqueue.isEmpty())	
+		{
+			System.out.println("当前队列为空，无法执行");
+			return rqueue;
+		}
+		
+		PCB run_pcb = rqueue.head.getNext_run();
+		
+			System.out.print(time_now +"\t\t"+run_pcb.getName()+"\t\t"+run_pcb.getTime_slice()+"\t\t");
+			rqueue.deleteFirst();
+			time_now +=  run_pcb.getTime_slice();	
+		rqueue.show_name();
+		return rqueue;
+	}
+	
+	public ReadyQueue run_in_time(int time) {					//按规定时间执行就绪队列	
+		int time_run=time;
+		PCB run_pcb = rqueue.head.getNext_run();
+		time_now=0;
+		while(time_run-run_pcb.getTime_slice()>=0&&!rqueue.isEmpty()) {
+			time_run=time_run-run_pcb.getTime_slice();
+			System.out.print(time_now +"\t\t"+run_pcb.getName()+"\t\t"+run_pcb.getTime_slice()+"\t\t");;
+			rqueue.deleteFirst();
+			time_now +=  run_pcb.getTime_slice();	
+			rqueue.show_name();
+			run_pcb = rqueue.head.getNext_run();
+		}
+		if(time_run!=0) {
+			run_pcb.setTime_slice(run_pcb.getTime_slice()-time_run);
+			time_now +=  run_pcb.getTime_slice();
+			System.out.print(time_now +"\t\t"+run_pcb.getName()+"\t\t"+run_pcb.getTime_slice()+"\t\t");
+			rqueue.show_name();
+		}
+		
+			System.out.println("进程执行完毕，执行到进程"+run_pcb.getName());
+		return rqueue;
+	}
+	
+	public void run_all() {									//执行完就绪队列，使其为空
+		PCB run_pcb = rqueue.head.getNext_run();
+		time_now=0;
+		while(!rqueue.isEmpty()) {
+			System.out.print(time_now +"\t\t"+run_pcb.getName()+"\t\t"+run_pcb.getTime_slice()+"\t\t");;
+			rqueue.deleteFirst();
+			time_now +=  run_pcb.getTime_slice();	
+			rqueue.show_name();
+			run_pcb = rqueue.head.getNext_run();
+		}
+		System.out.println("进程执行完毕，执行时间"+time_now+"个时间单位");
+	}
+}

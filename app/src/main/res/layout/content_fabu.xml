@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="420dp"
+            android:layout_height="138dp"
+
+
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ul1"
+                android:layout_width="97dp"
+                android:layout_height="97dp"
+                android:layout_marginRight="10dp"
+
+       />
+
+            <ImageView
+                android:id="@+id/ul2"
+                android:layout_width="97dp"
+                android:layout_height="97dp"
+                android:layout_marginRight="10dp"
+
+                />
+
+            <ImageView
+                android:id="@+id/ul3"
+                android:layout_width="97dp"
+                android:layout_height="97dp"
+                android:layout_marginRight="10dp" />
+
+            <ImageView
+                android:id="@+id/ul4"
+                android:layout_width="97dp"
+                android:layout_height="97dp"
+                android:layout_marginRight="10dp" />
+        </LinearLayout>
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="420dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/upload" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="420dp"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="420dp"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="420dp"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="420dp"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+    </LinearLayout>

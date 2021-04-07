@@ -1,0 +1,96 @@
+package PCB;
+public class PCB {
+	
+	private String name;	
+	private String state;	//进程当前状态
+	private int static_prio;//静态优先级（不可修改）
+	private int prio;		//动态优先级
+	private PCB next_run;	//指向下一个进程
+	private PCB prev_run;	//指向上一个进程
+	private int sleep;		//进程等待时间
+	private int time_slice;	//进程时间片中还剩余的时钟节拍数
+	
+	public PCB(String name, String state, int static_prio, int time_slice, PCB next_run, PCB prev_run){
+		this.name = name;
+		this.state = state;
+		this.static_prio = static_prio;
+		this.time_slice = time_slice;
+		this.next_run = next_run;
+		this.prev_run = prev_run;
+		
+		this.prio = static_prio;
+		this.sleep = 0;
+	}
+	public PCB(String name, String state, int static_prio, int time_slice){
+		this(name, state, static_prio, time_slice, null, null);
+	}
+	public PCB(String name, int static_prio, int time_slice){
+		this(name, "就绪", static_prio, time_slice, null, null );
+	}
+	public PCB () {
+		//用于队列中头指针的建立
+	}
+	
+	public String show() {
+		return "进程：" + name + "、状态：" + state + "、动态优先级：" + prio 
+				+ "、等待时间：" + sleep + "、剩余时钟节拍数：" + time_slice;
+	}
+	
+	//进程名
+	public String getName() {
+		return name;
+	}
+	//当前状态
+	public String getState() {
+		return state;
+	}
+	public void setState(String state) {
+		this.state = state;
+	}
+	
+	//静态优先级（不可修改）
+	public int getStatic_prio() {
+		return static_prio;
+	}
+	
+	//动态优先级
+	public int getPrio() {
+		return prio;
+	}
+	public void setPrio(int prio) {
+		this.prio = prio;
+	}
+	
+	//下一个进程
+	public PCB getNext_run() {
+		return next_run;
+	}
+	public void setNext_run(PCB next_run) {
+		this.next_run = next_run;
+	}
+	
+	//上一个进程
+	public PCB getPrev_run() {
+		return prev_run;
+	}
+	public void setPrev_run(PCB prev_run) {
+		this.prev_run = prev_run;
+	}
+	
+	//进程已等待时间
+	public int getSleep() {
+		return sleep;
+	}
+	public void setSleep(int sleep) {
+		this.sleep = sleep;
+	}
+	
+	//进程时间片中还剩余的时钟节拍数
+	public int getTime_slice() {
+		return time_slice;
+	}
+	public void setTime_slice(int time_slice) {
+		this.time_slice = time_slice;
+	}
+	
+}

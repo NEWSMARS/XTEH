@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;wp/WebContent/manage/jsp/staff_add.jsp&apos; to &apos;studentadd.jsp&apos;" description="Rename resource &apos;staff_add.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/manage/jsp/staff_add.jsp" name="studentadd.jsp" stamp="1575940693627" updateReferences="true"/>
+</session>

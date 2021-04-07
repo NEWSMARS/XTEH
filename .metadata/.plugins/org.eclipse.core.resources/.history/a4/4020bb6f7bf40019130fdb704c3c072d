@@ -1,0 +1,35 @@
+package test;
+
+import PCB.PCB;
+import queue.ReadyQueue;
+import scheduler.RoundRobin;
+
+public class test1 {
+	public static void main() {
+	PCB [] pcb;
+	pcb = new PCB[7];
+    pcb[0] = new PCB("pcb0",10,3);
+    pcb[1] = new PCB("pcb1",40,4);
+    pcb[2] = new PCB("pcb2",50,5);
+    pcb[3] = new PCB("pcb3",80,10);
+    pcb[4] = new PCB("pcb4",60,2);
+    pcb[5] = new PCB("pcb5",78,9);
+    pcb[6] = new PCB("pcb6",5,14);
+
+    RoundRobin RR = new RoundRobin();					//定义一个时间片轮转算法，内置空就绪队列
+    RR.rqueueInit(pcb);									//将进程列表放入该算法中，初始化该就绪队列，转换为待执行状态
+   
+    System.out.println("时间片轮转");
+    System.out.println("当前时间\t\t进程\t\t执行时间\t\t就绪队列");
+    System.out.println("执行批处理调度算法");
+    ReadyQueue rqueue  = RR.run();						//只执行一次就绪队列中第一个pcb进程
+
+    
+    
+    System.out.println("执行12个时间单位");
+    ReadyQueue rqueue2 	=   RR.run_in_time(12);				//按规定时间执行该算法中的就绪队列
+    
+    
+    
+	}
+}

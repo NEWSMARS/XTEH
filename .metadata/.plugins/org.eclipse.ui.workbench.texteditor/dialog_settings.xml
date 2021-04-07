@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="视频" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="视频"/>
+			<item value="视频上传"/>
+			<item value="50"/>
+			<item value="HeaderController"/>
+			<item value="上传视频"/>
+			<item value="教师"/>
+			<item value="学生"/>
+			<item value="login.jsp"/>
+			<item value="loginservlet"/>
+			<item value="null"/>
+			<item value="navbar-default"/>
+			<item value="page_bar"/>
+			<item value="page-title"/>
+			<item value="dataTables_length"/>
+			<item value="a"/>
+		</list>
+		<list key="replacehistory">
+			<item value="管理员"/>
+			<item value="用户"/>
+			<item value="/wp/login.jsp"/>
+			<item value="login.jsp"/>
+			<item value="td"/>
+			<item value="manage"/>
+			<item value="attendancelist"/>
+			<item value="jsp"/>
+			<item value="user"/>
+			<item value="Product"/>
+			<item value="pic"/>
+			<item value="productListByCidServlet"/>
+			<item value="New"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="356" key="DIALOG_WIDTH"/>
+		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
+		<item value="454" key="DIALOG_HEIGHT"/>
+		<item value="1446" key="DIALOG_X_ORIGIN"/>
+		<item value="264" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

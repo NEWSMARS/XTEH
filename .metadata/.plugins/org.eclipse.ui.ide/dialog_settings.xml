@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\a1521\Desktop\nm"/>
+		<item value="C:\Users\a1521\Desktop\wp"/>
+		<item value="E:\wp\wp"/>
+		<item value="D:\作业\文档2\PMS2.0"/>
+		<item value="C:\Users\a1521\Desktop\servlet_demo"/>
+		<item value="C:\Users\a1521\Desktop\3117003909 李记烽\源代码\PMS2.0"/>
+		<item value="C:\Users\a1521\Desktop\PMS2.0"/>
+		<item value="D:\大二下学期\实习java\部门通00(2)"/>
+		<item value="D:\java1\【阶段04】JavaWeb综合项目实战\WEB31_网上商城\WEB31_网上商城\代码\HeimaShop1"/>
+		<item value="D:\java1\【阶段04】JavaWeb综合项目实战\WEB31_网上商城\WEB31_网上商城\代码"/>
+		<item value="D:\java1\【阶段04】JavaWeb综合项目实战\WEB33_网上商城\WEB33_网上商城\WEB33_网上商城"/>
+		<item value="D:\java1\【阶段04】JavaWeb综合项目实战\project\HeimaShop"/>
+		<item value="D:\java1\【阶段04】JavaWeb综合项目实战\WEB33_网上商城\WEB33_网上商城\WEB33_网上商城\代码\HeimaShop"/>
+		<item value="D:\java1\【阶段04】JavaWeb综合项目实战\project\WEB33_网上商城\WEB33_网上商城\代码\HeimaShop"/>
+		<item value="D:\java1\【阶段04】JavaWeb综合项目实战\WEB32_网上商城\WEB32_网上商城\代码\HeimaShop"/>
+		<item value="D:\java1\【阶段04】JavaWeb综合项目实战\WEB33_网上商城\WEB33_网上商城\代码"/>
+		<item value="D:\java1\【阶段04】JavaWeb综合项目实战\WEB29_网上商城\WEB29_网上商城\代码\HeimaShop"/>
+		<item value="D:\最重要：java\【阶段04】JavaWeb综合项目实战\WEB33_网上商城\WEB33_网上商城\代码"/>
+		<item value="D:\最重要：java\【阶段04】JavaWeb综合项目实战\WEB29_网上商城\WEB29_网上商城\代码\HeimaShop"/>
+	</list>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jst.servlet.ui.project.facet.WebProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jdt.ui.java"/>
+			<item value="org.eclipse.wst.web.ui"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
+		<item value="false" key="FilterByLocation"/>
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/HeimaShop/WebContent/admin/index.jsp&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;/historyRootNode&gt;&#x0D;&#x0A;&lt;/History&gt;" key="History"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;" key="WorkingSet"/>
+		<item value="false" key="ShowDerived"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="344" key="DIALOG_X_ORIGIN"/>
+			<item value="-50" key="DIALOG_Y_ORIGIN"/>
+		</section>
+	</section>
+</section>

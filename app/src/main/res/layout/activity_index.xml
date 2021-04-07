@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+
+
+
+
+        <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="20dp"
+
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/q1"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="17dp"
+
+                    android:background="@drawable/suma" />
+
+                <ImageView
+                    android:id="@+id/q2"
+
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="17dp"
+                    android:background="@drawable/shouji"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/q3"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="17dp"
+                    android:background="@drawable/yiyao"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/q4"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="17dp"
+                    android:background="@drawable/baihuo"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/q5"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="17dp"
+                    android:background="@drawable/yundon"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="19dp"
+
+
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="17dp"
+                    android:text="数码"
+                    android:textAlignment="center"
+                    android:textColor="@color/base_line"
+                    android:textSize="@dimen/basePadding"
+                    android:textStyle="bold" />
+                />
+
+                <TextView
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="17dp"
+                    android:text="医药"
+                    android:textAlignment="center"
+                    android:textColor="@color/base_line"
+                    android:textSize="@dimen/basePadding"
+                    android:textStyle="bold" />
+                />
+
+                <TextView
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="17dp"
+                    android:text="手机"
+                    android:textAlignment="center"
+                    android:textColor="@color/base_line"
+                    android:textSize="@dimen/basePadding"
+                    android:textStyle="bold" />
+                />
+
+                <TextView
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="17dp"
+                    android:text="百货"
+                    android:textAlignment="center"
+                    android:textColor="@color/base_line"
+                    android:textSize="@dimen/basePadding"
+                    android:textStyle="bold" />
+                />
+
+                <TextView
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="17dp"
+                    android:text="运动"
+                    android:textAlignment="center"
+                    android:textColor="@color/base_line"
+                    android:textSize="@dimen/basePadding"
+                    android:textStyle="bold" />
+                />
+
+
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="68dp"
+
+
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/q6"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="17dp"
+
+                    android:background="@drawable/shipin" />
+
+                <ImageView
+
+                    android:id="@+id/q7"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="17dp"
+                    android:background="@drawable/nvzhuang"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/q8"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="17dp"
+                    android:background="@drawable/dianqi"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/q9"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="17dp"
+                    android:background="@drawable/xihu"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/q10"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="17dp"
+                    android:background="@drawable/shipin"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="19dp"
+
+
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="17dp"
+                    android:text="食品"
+                    android:textAlignment="center"
+                    android:textColor="@color/base_line"
+                    android:textSize="@dimen/basePadding"
+                    android:textStyle="bold" />
+                />
+
+                <TextView
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="17dp"
+                    android:text="女装"
+                    android:textAlignment="center"
+                    android:textColor="@color/base_line"
+                    android:textSize="@dimen/basePadding"
+                    android:textStyle="bold" />
+                />
+
+                <TextView
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="17dp"
+                    android:text="电器"
+                    android:textAlignment="center"
+                    android:textColor="@color/base_line"
+                    android:textSize="@dimen/basePadding"
+                    android:textStyle="bold" />
+                />
+
+                <TextView
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="17dp"
+                    android:text="洗护"
+                    android:textAlignment="center"
+                    android:textColor="@color/base_line"
+                    android:textSize="@dimen/basePadding"
+                    android:textStyle="bold" />
+                />
+
+                <TextView
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="17dp"
+                    android:text="饰品"
+                    android:textAlignment="center"
+                    android:textColor="@color/base_line"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+                />
+
+                />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line3"
+                style="@style/line_vertical"
+
+                android:layout_height="wrap_content"></View>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="300dp"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/base_title_color"
+                android:gravity="center_vertical"
+                android:text="热门商品|都是大家喜欢的喔"
+                android:textColor="@color/base_title_right_color"
+
+                android:textSize="@dimen/largerPadding"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="97dp"
+
+
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/hi1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginRight="10dp"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/hi2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginRight="10dp"
+
+                    />
+                <ImageView
+                    android:id="@+id/hi3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginRight="10dp"/>
+
+                <ImageView
+                    android:id="@+id/hi4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginRight="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView011"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="名字"
+                    android:textAlignment="center"
+
+                    android:textColor="@color/base_text_color_gray"
+                    android:textSize="@dimen/largerPadding"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView012"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="名字"
+                    android:textAlignment="center"
+
+                    android:textColor="@color/base_text_color_gray"
+                    android:textSize="@dimen/largerPadding"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="名字"
+                    android:textAlignment="center"
+
+                    android:textColor="@color/base_text_color_gray"
+                    android:textSize="@dimen/largerPadding"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="名字"
+                    android:textAlignment="center"
+
+                    android:textColor="@color/base_text_color_gray"
+                    android:textSize="@dimen/largerPadding"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView021"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="价格"
+                    android:textAlignment="center"
+                    android:textColor="@color/base_text_color_gray"
+                    android:textSize="@dimen/largerPadding"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView022"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="价格"
+                    android:textAlignment="center"
+
+                    android:textColor="@color/base_text_color_gray"
+                    android:textSize="@dimen/largerPadding"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView041"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="价格"
+                    android:textAlignment="center"
+                    android:textColor="@color/base_text_color_gray"
+                    android:textSize="@dimen/largerPadding"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView042"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="价格"
+                    android:textAlignment="center"
+
+                    android:textColor="@color/base_text_color_gray"
+                    android:textSize="@dimen/largerPadding"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line2"
+                style="@style/line_vertical"
+
+                ></View>
+
+            <TextView
+                android:id="@+id/hottext"
+                android:layout_width="300dp"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/base_title_color"
+                android:gravity="center_vertical"
+                android:text="最新商品|都是大家喜欢的喔"
+                android:textColor="@color/base_blue"
+
+                android:textSize="@dimen/largerPadding"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="80dp"
+
+
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ni1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginRight="10dp"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/ni2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginRight="10dp"
+
+                    />
+                <ImageView
+                    android:id="@+id/ni3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginRight="10dp"/>
+
+                <ImageView
+                    android:id="@+id/ni4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginRight="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView51"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="名字"
+                    android:textAlignment="center"
+
+                    android:textColor="@color/base_text_color_gray"
+                    android:textSize="@dimen/largerPadding"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView52"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="名字"
+                    android:textAlignment="center"
+
+                    android:textColor="@color/base_text_color_gray"
+                    android:textSize="@dimen/largerPadding"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView71"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="名字"
+                    android:textAlignment="center"
+
+                    android:textColor="@color/base_text_color_gray"
+                    android:textSize="@dimen/largerPadding"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView72"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="名字"
+                    android:textAlignment="center"
+
+                    android:textColor="@color/base_text_color_gray"
+                    android:textSize="@dimen/largerPadding"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView061"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="价格"
+                    android:textAlignment="center"
+                    android:textColor="@color/base_text_color_gray"
+                    android:textSize="@dimen/largerPadding"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView062"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="价格"
+                    android:textAlignment="center"
+
+                    android:textColor="@color/base_text_color_gray"
+                    android:textSize="@dimen/largerPadding"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView081"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="价格"
+                    android:textAlignment="center"
+                    android:textColor="@color/base_text_color_gray"
+                    android:textSize="@dimen/largerPadding"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView082"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="价格"
+                    android:textAlignment="center"
+
+                    android:textColor="@color/base_text_color_gray"
+                    android:textSize="@dimen/largerPadding"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

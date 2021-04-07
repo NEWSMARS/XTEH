@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="270dp"
+        android:layout_height="98dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/nothing" />
+
+    <ImageView
+        android:layout_width="111dp"
+        android:layout_height="87dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/default_icon" />
+
+    <EditText
+        android:id="@+id/et_user_name"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="35dp"
+        android:background="@color/base_title_color"
+        android:drawableLeft="@drawable/user_name_icon"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:hint="请输入手机号"
+        android:paddingLeft="8dp"
+        android:scrollbarThumbHorizontal="@color/base_text_color_gray"
+        android:scrollbarThumbVertical="@color/base_title_color"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="@color/base_color"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="61dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="3dp"
+
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_psw"
+            android:layout_width="180dp"
+            android:layout_height="63dp"
+            android:layout_gravity="center_horizontal"
+
+            android:background="@color/base_title_color"
+            android:drawableLeft="@color/base_title_color"
+            android:drawablePadding="10dp"
+            android:hint="验证码"
+            android:inputType="textPassword"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="@color/base_color"
+            android:textColorLink="@color/base_color"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/cheak_phone"
+            style="@style/bigConfirmButton"
+            android:layout_width="159dp"
+            android:layout_height="37dp"
+            android:layout_margin="5dp"
+
+
+            android:layout_marginBottom="88dp"
+            android:background="@color/dodgerblue"
+            android:text="获取验证码"></Button>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/snow"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_register"
+            style="@style/bigConfirmButton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="@dimen/text_18"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="88dp"
+            android:background="@color/dodgerblue"
+            android:text="登     陆"></Button>
+
+        <Button
+            android:id="@+id/btn_register2"
+            style="@style/bigConfirmButton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="88dp"
+            android:text="注     册"></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/snow"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_password"
+            style="@style/bigConfirmButton"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="88dp"
+            android:background="@drawable/bg_btn_nor"
+            android:text="账号密码登录"></Button>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="五邑大学李宏裕出品" />
+
+</LinearLayout>

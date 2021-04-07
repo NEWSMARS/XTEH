@@ -1,0 +1,101 @@
+package scheduler;
+
+import PCB.PCB;
+import scheduler.RoundRobin;
+import scheduler.ShortestJobFirst;
+
+//�༶����
+public class MultilevelQueue {
+	private PCB[] active;
+	private PCB[] expired;
+	private boolean newPcb; //true Ϊ ���µĽ��̽��룬 Ĭ��Ϊfalse��
+	
+	
+	MultilevelQueue(){
+		active = new PCB[4];
+		expired = new PCB[4];
+		newPcb = false;
+	}
+	
+	
+	public void addPcb(PCB pcb){	//���һ���½���
+		
+		newPcb = true;
+		if(pcb==null) {
+			System.out.println("pcb=null,����");
+			newPcb = false;
+			return;
+		}
+		//���Կ���ʹ�� switch  case���
+		if("ϵͳ����".equals(pcb.getCategory())) {
+			addPcbToHead(pcb,active[0]);
+		}
+		else if("ʵʱ����".equals(pcb.getCategory())) {
+			addPcbToHead(pcb,active[1]);
+		}
+		else if("��������".equals(pcb.getCategory())) {
+			addPcbToHead(pcb,active[1]);
+		}
+		else {	//����������Լ��������н��̶��ŵ���������
+			addPcbToHead(pcb,active[3]);
+		}
+		
+		newPcb = false;
+	}
+	public void addPcbToHead(PCB pcb,PCB ArrayHead) {		//����β���
+		PCB head = ArrayHead;			//�����ͷ
+		PCB tail = head.getPrev_run();	//�����β
+		
+		pcb.setNext_run(head);
+		pcb.setPrev_run(tail);
+		tail.setNext_run(pcb);
+		head.setPrev_run(pcb);
+	}
+	
+	//һ���԰������ѽ�����еĽ���ִ�����
+	public void run() {
+		
+		
+		RoundRobin roundRobin = new RoundRobin();						//�ڶ�
+		
+		ShortestJobFirst shortestJobFirst = new ShortestJobFirst();		//���
+		
+		if(active[1]!=null) {
+			destroyList(active[1].getNext_run());
+			roundRobin.rqueueInit(active[1].getNext_run());//��Ϊ���յ�����������Ҫ��ΪPCB��������ʾ����
+			roundRobin.run_all();
+		}
+		if(active[3]!=null) {
+			destroyList(active[3].getNext_run());
+			shortestJobFirst.rqueueInit(active[3].getNext_run());//��Ϊ���յ�����������Ҫ��ΪPCB��������ʾ����
+			shortestJobFirst.run_all();
+		}
+		
+	}
+	public void destroyList(PCB head) {		//�ƻ�ѭ��˫��������β��ָ��null���ܹ�����ѭ������һ������Ϊ��ͨ����
+		head.getPrev_run().setNext_run(null);
+	}
+	
+	
+	public PCB[] getExpired() {
+		return expired;
+	}
+	public void setExpired(PCB[] expired) {
+		this.expired = expired;
+	}
+	public PCB[] getActive() {
+		return active;
+	}
+	public void setActive(PCB[] active) {
+		this.active = active;
+	}
+	public boolean isNewPcb() {
+		return newPcb;
+	}
+	public void setNewPcb(boolean newPcb) {
+		this.newPcb = newPcb;
+	}
+	
+	
+	
+}

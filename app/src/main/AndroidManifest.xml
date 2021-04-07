@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.xtes">
+    <!-- if you want to load images from the internet -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- if you want to load images from a file OR from the internet -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <!--相机权限-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--写入SD卡的权限：如果你希望保存相机拍照后的照片-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--读取SD卡的权限:打开相册选取图片所必须的权限-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>-->
+    <!--  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true">
+        <activity
+            android:name=".activity.fabu_product"
+            android:label="@string/title_activity_fabu_product"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".activity.fabu"
+            android:label="@string/title_activity_fabu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.my_product"
+            android:label="@string/title_activity_my_product"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.showshowshow"
+            android:label="@string/title_activity_showshowshow"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.talkingActivity" />
+        <activity android:name=".activity.change_user" />
+        <activity android:name=".activity.phoneActivity" />
+        <activity android:name=".activity.product_show" />
+        <activity android:name=".activity.Main2Activity" />
+        <activity android:name=".activity.myuser" />
+        <activity android:name=".activity.buycar" />
+        <activity android:name=".activity.product_list" />
+        <activity android:name=".activity.index" />
+        <activity android:name=".activity.under" />
+        <activity android:name=".loginActivity" />
+        <activity android:name=".activity.logonActivity" />
+        <activity android:name=".activity.MainActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

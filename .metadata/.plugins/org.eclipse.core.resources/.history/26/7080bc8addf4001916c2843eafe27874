@@ -1,0 +1,98 @@
+package queue;
+
+import PCB.PCB;
+
+public class ReadyQueue {                       //就绪队列
+	public PCB head;			//就绪队列的头指针，下一位指向第一个PCB
+	private int length;			//当前队列的长度
+	public ReadyQueue() {
+		// TODO Auto-generated constructor stub
+		head = new PCB();
+		head.setNext_run(head);		//下指针指向自己
+		head.setPrev_run(head);		//上指针指向自己
+		length = 0;
+	}
+
+	
+	
+	public PCB deleteFirst() {           //第一个PCB出队，返回该PCB
+		if(length==0) return null;
+		PCB temp = head.getNext_run();
+		head.setNext_run(temp.getNext_run());
+		temp.getNext_run().setPrev_run(head);
+		temp.setNext_run(null);
+		temp.setPrev_run(null);
+		length--;
+		return temp;
+	}
+	public void addLast(PCB pcb) {                  //在队尾添加一个PCB
+		head.getPrev_run().setNext_run(pcb);
+		pcb.setPrev_run(head.getPrev_run());
+		pcb.setNext_run(head);
+		head.setPrev_run(pcb);
+		length++;
+		
+	}
+	public void add_index(PCB pcb,int index) {                  //在第i个PCB后添加pcb
+		if(length==0) 
+		{
+			addLast(pcb);
+			return ;
+		}
+		if(index>length)
+		{
+			System.out.println("该队列长度为"+length+",无第"+index+"个PCB"  );
+			return ;
+		}
+		PCB pcb_i = head;
+		for(int i=0;i<index;i++)
+		{
+			pcb_i = pcb_i.getNext_run();
+		}
+		PCB temp = pcb_i.getNext_run();
+		pcb.setPrev_run(pcb_i);
+		pcb_i.setNext_run(pcb);
+		pcb.setNext_run(temp);
+		temp.setPrev_run(pcb);
+		length++;
+		
+	} 
+
+
+	public boolean isEmpty(){					//判断是否为空
+        return length == 0;
+    }
+
+	public int getLength() {          //获取队列的长度
+		return length;
+	}
+	public void show_all() {										//打印就绪队列所有pcb信息
+		if(length==0) {
+			System.out.println("当前就绪队列为空");
+		}
+		PCB temp = head;
+		for(int i=0;i<length;i++) {
+			System.out.println(temp.getNext_run().show());
+			temp = temp.getNext_run();
+		}
+		
+	}
+	public void show_name() {										//打印就绪队列名称
+		if(length==0) {
+			System.out.println("当前就绪队列为空");
+		return ;
+		}
+		PCB temp = head;
+		for(int i=0;i<length;i++) {
+			System.out.print(temp.getNext_run().getName()+"\t");
+			temp = temp.getNext_run();
+		}
+		System.out.println();
+	}
+	
+
+
+
+	
+
+}

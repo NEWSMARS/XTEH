@@ -1,0 +1,205 @@
+package wp.itheima.web.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.SQLException;
+import java.util.List;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import impl.CommentDaoImpl;
+import impl.ResourceDaoImpl;
+import model.Comment;
+import model.Resource;
+import wp.itheima.dao.StudentDao;
+import wp.itheima.domain.Student;
+import wp.itheima.service.StudentService;
+@WebServlet("/loginservlet")
+public class Login extends HttpServlet {
+
+	 StudentService studentService = new StudentService();
+	    private static final long serialVersionUID = 1L;
+	       
+	 
+	    public Login() {
+	        super();
+	        // TODO Auto-generated constructor stub
+	    }
+
+
+	    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	        // TODO Auto-generated method stub
+	      //  response.getWriter().append("login.jsp ").append(request.getContextPath());
+	        String userName = request.getParameter("userid");
+	        String userPwd = request.getParameter("password");
+	    
+	        StudentDao dao=new StudentDao();
+	 
+	       
+	       
+	        String pw = null;
+			try {
+				pw = dao.findPasswordByid(userName);
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+			//String k=null;
+			
+			int i = 0;
+			try {
+				i = dao.findRoleByid(userName);
+				 //i=Integer.parseInt(k);
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		/*	try {
+				k = studentService.judgeLogin(userName,uesrPwd);
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}*/
+	        
+	     
+	        if(pw==null) {
+	        	 request.getRequestDispatcher("login.jsp").forward(request, response);
+	        }
+	        else {
+	        	 if(pw.equals(userPwd)) {
+	        		
+					//绠＄悊鍛橀〉闈�
+	        		 if(i==0) {
+	        			 request.getRequestDispatcher("mindex").forward(request, response);
+	        		 }
+	        		 //鏁欏笀瀛︾敓椤甸潰
+	        		 else {
+	        			 ResourceDaoImpl resourceDaoImpl = new ResourceDaoImpl();
+	        				List<Resource> list = resourceDaoImpl.queryAll();
+//	        				System.out.println("shuju"+list.get(0).getCard());
+	        				request.setAttribute("list", list);
+	        				
+	        				
+	        				List<Resource> list1 = resourceDaoImpl.queryByCategory(1);
+//	        				System.out.println("shuju"+list.get(0).getCard());
+	        				request.setAttribute("list1", list1);
+	        				
+	        				List<Resource> list2 = resourceDaoImpl.queryByCategory(2);
+//	        				System.out.println("shuju"+list.get(0).getCard());
+	        				request.setAttribute("list2", list2);
+	        				
+	        				List<Resource> list3 = resourceDaoImpl.queryByCategory(3);
+//	        				System.out.println("shuju"+list.get(0).getCard());
+	        				request.setAttribute("list3", list3);
+	        				
+	        				List<Resource> list4 = resourceDaoImpl.queryByCategory(4);
+//	        				System.out.println("shuju"+list.get(0).getCard());
+	        				request.setAttribute("list4", list4);
+	        				
+	        				List<Resource> list5 = resourceDaoImpl.queryByCategory(5);
+//	        				System.out.println("shuju"+list.get(0).getCard());
+	        				request.setAttribute("list5", list5);
+	        				
+	        				CommentDaoImpl commentDaoImpl = new CommentDaoImpl();
+	        				List<Comment> comment_time = commentDaoImpl.queryByTime();
+	        				request.setAttribute("comment_time", comment_time);
+	        			 
+	        				request.setAttribute("userName",userName );
+	        				
+	        			 request.getRequestDispatcher("/WEB-INF/pages/index.jsp").forward(request, response);
+	        		 }
+	        
+	 	        }else {
+	 	            request.getRequestDispatcher("login.jsp").forward(request, response);
+	 	        }
+	        }
+	       
+	    }
+
+	    
+	    
+	    
+	    private Object Integer(String userName) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+
+		protected void doPost(HttpServletRequest request, HttpServletResponse response)
+				throws ServletException, IOException {
+			//瀵逛簬post璇锋眰锛岃缃姹傜紪鐮侊紝闃叉涔辩爜
+			request.setCharacterEncoding("utf-8");
+			//璁剧疆鍝嶅簲姝ｆ枃鐨勭紪鐮佸拰娴忚鍣ㄨВ鐮侀噰鐢ㄧ殑缂栫爜
+			response.setContentType("text/html;charset=utf-8");
+			doGet(request,response);
+		}
+/*	    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	        // TODO Auto-generated method stub
+	        request.setCharacterEncoding("utf-8");
+	        String userName = request.getParameter("userid");
+	        String uesrPwd = request.getParameter("password");
+	        
+	        int k = 0;
+			try {
+				k = studentService.judgeLogin(userName,uesrPwd);
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	        if(k > 0) {
+	            request.getRequestDispatcher("index.jsp").forward(request, response);
+	        }else {
+	            request.getRequestDispatcher("login.jsp").forward(request, response);
+	        }
+	    }*/
+		
+
+	    
+	}
+
+
+
+
+
+
+
+
+
+
+
+/*		int is_true = 0;
+		is_true=service.cheaklogin(studentId,Upassword);
+		System.out.print(is_true);
+		
+		if(is_true==0) {
+			request.setAttribute("is_true", is_true);
+			request.getRequestDispatcher("/login.jsp").forward(request, response);
+			
+		}
+		else {
+			student = service.findStudentByid(studentId);
+			request.setAttribute("userid", studentId);
+			request.getRequestDispatcher("/index.jsp").forward(request, response);
+		}
+
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		//瀵逛簬post璇锋眰锛岃缃姹傜紪鐮侊紝闃叉涔辩爜
+		request.setCharacterEncoding("utf-8");
+		//璁剧疆鍝嶅簲姝ｆ枃鐨勭紪鐮佸拰娴忚鍣ㄨВ鐮侀噰鐢ㄧ殑缂栫爜
+		response.setContentType("text/html;charset=utf-8");
+		doGet(request,response);
+	}
+}*/

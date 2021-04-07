@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.itheima.utils.DataSourceUtils"/>
+<fullyQualifiedTypeName name="org.apache.commons.dbutils.QueryRunner"/>
+<fullyQualifiedTypeName name="org.apache.commons.dbutils.handlers.BeanListHandler"/>
+<fullyQualifiedTypeName name="java.util.UUID"/>
+<fullyQualifiedTypeName name="javax.servlet.http.Cookie"/>
+<fullyQualifiedTypeName name="Borune.service.Userservice"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="Borune.domain.User"/>
+<fullyQualifiedTypeName name="com.itheima.domain.Category"/>
+<fullyQualifiedTypeName name="com.google.gson.Gson"/>
+<fullyQualifiedTypeName name="com.itheima.domain.PageBean"/>
+<fullyQualifiedTypeName name="com.itheima.domain.product"/>
+<fullyQualifiedTypeName name="org.apache.commons.dbutils.handlers.ScalarHandler"/>
+<fullyQualifiedTypeName name="org.apache.commons.dbutils.ResultSetHandler"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="com.itheima.domain.Product"/>
+<fullyQualifiedTypeName name="com.itheima.service.ProductService"/>
+<fullyQualifiedTypeName name="com.itheima.dao.UserDao"/>
+<fullyQualifiedTypeName name="com.itheima.domain.User"/>
+<fullyQualifiedTypeName name="com.itheima.service.UserService"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="com.itheima.dao.StaffDao"/>
+<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+<fullyQualifiedTypeName name="com.itheima.domain.Staff"/>
+<fullyQualifiedTypeName name="com.itheima.service.StaffService"/>
+<fullyQualifiedTypeName name="com.itheima.domain.Attendance"/>
+<fullyQualifiedTypeName name="com.itheima.service.AttendanceService"/>
+<fullyQualifiedTypeName name="com.itheima.dao.AttendanceDao"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="scheduler.ShortestJobFirst"/>
+<fullyQualifiedTypeName name="scheduler.RoundRobin"/>
+<fullyQualifiedTypeName name="wp.itheima.service.ResourceService"/>
+<fullyQualifiedTypeName name="wp.itheima.service.StudentService"/>
+<fullyQualifiedTypeName name="wp.itheima.domain.Student"/>
+<fullyQualifiedTypeName name="wp.itheima.domain.User_in"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="org.apache.commons.dbutils.handlers.BeanHandler"/>
+<fullyQualifiedTypeName name="wp.itheima.dao.ResourceDao"/>
+<fullyQualifiedTypeName name="wp.itheima.domain.Resource"/>
+</qualifiedTypeNameHistroy>

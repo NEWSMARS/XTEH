@@ -1,0 +1,22 @@
+package Borune.dao;
+
+import java.sql.SQLException;
+
+import org.apache.commons.dbutils.QueryRunner;
+
+import Borune.domain.User;
+import Borune.utils.DataSourceUtils;
+
+public class UserDao {
+	
+	
+	public int add(User user) throws SQLException {
+		// TODO Auto-generated method stub
+		QueryRunner runner = new QueryRunner(DataSourceUtils.getDataSource());
+		String sql = "insert into user values(?,?,?,?,?,?)";
+//	 int b = runner.update(sql,user.getUsername(),user.getPassword(), user.getUid(),user.getCode(),user.getEmail(),user.getState());	
+		 int b = runner.update(sql,1,2,3,4,5,6);	
+		return b;
+	}
+
+}
