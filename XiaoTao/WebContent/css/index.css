@@ -1,0 +1,296 @@
+*{
+	margin: 0px;
+	padding: 0px;
+
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+ul{
+	list-style: none;
+
+}
+li{
+	float: left;
+}
+.top_bar , .headerLayout, .classily, .carousel, .carousel_control , .new_product,.bottom_bar ,.page_bar{
+	width: 1200px;
+	height: 30px;
+/*	background-color: #999;*/
+	margin: 0 auto;
+	position: relative;
+
+}
+.top_bar ul{
+	list-style: none;
+	position: absolute;
+}
+.top_login{
+	left: 0px;
+}
+.quick_menu{
+	right: 0px;
+}
+.top_bar li{
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.top_bar a{
+
+	font-size: 14px;
+	line-height: 30px;
+	color: #999;
+}
+.headerLayout{
+	height: 100px;
+	/*border: 1px solid red;*/
+	position: relative;
+}
+.headerLayout div{
+	position: absolute;
+}
+.logo{
+	left:0px;
+	width: 300px;
+	height: 100px;
+	cursor:pointer;
+	background-size: 100% 100%;
+}
+
+.search{
+	/*vertical-align: middle;*/
+	margin:0 auto;
+	left:400px;
+	width: 500px;
+	height: 40px;
+/*	border: 1px solid red;*/
+	top: 50%;
+	margin-top: -20px;
+}
+.sell_shopping{
+	right: 0px;
+	width: 140px;
+	height: 100px;
+	/*border: 1px solid red;*/
+
+}
+.selling{
+	color: #fff;
+	padding: 10px;
+	width: 120px;
+	height: 24px;
+	text-align: center;
+	font-size: 22px;
+	margin-top: 30px;
+	position: absolute;
+	line-height: 24px;
+	background-color: #ff0036;
+}
+.search form{
+	float: left;
+
+}
+#search_input{
+	width: 400px;
+	height: 40px;
+	font-size: 20px;
+	border: 2px solid #ff0036;
+	outline: none;
+	float: left;
+	/*取消输入框聚焦*/
+
+}
+#search_sub{
+	width: 80px;
+	text-align: center;
+	height: 44px;
+	font-size: 20px;
+	float: left;
+	border: 0;
+	color: #fff;
+	background-color: #ff0036;
+	cursor:pointer;
+
+	/*移动到该元素时显示手指标*/
+	outline: none;
+}
+.classily{
+	height: 35px;
+}
+
+.classily ul{
+	float: left;
+	list-style: none;
+}
+.classily ul li{
+	display: inline-block;
+	width: 58px;
+	float: left;
+	cursor:pointer;
+	margin-right: 15px;
+	margin-left: 10px;
+	font-size: 20px;
+	border-right: 1px solid #999;
+
+}
+.classily .classily_all{
+	margin-left: 10px;
+	background-color: #ff0036;
+	color: #fff;
+	width: 120px;
+	text-align: center;
+	border: 0px;
+
+}
+.classily .classily_walk{
+	border: 0px;
+}
+
+.carousel{
+	height: 500px;
+	border: 1px solid black;
+	overflow: hidden;
+}
+.carousel ul{
+	width:6000px;
+	height: 500px;
+	position:relative;
+	left:0px;
+}
+.carousel li{
+	width:1200px;
+	height: 500px;
+	background-size: 100% 100%;
+	float: left;
+	/*position: relative;*/
+}
+.carousel_control{
+	/*position: absolute;*/
+ 
+	/*background-color: #ff00ff40;*/
+	/*top:500px;*/
+	height: 30px;
+	margin-top: -30px;
+}
+.carousel_control ul{
+	/*position: relative;*/
+	width: 200px;
+	height: 5px;
+	margin:0 auto;
+/*	background-color: #ff00ff40;*/
+}
+.carousel_control li{
+	text-align: center;
+	width:30px;
+	height: 5px;
+	margin-left: 15px;
+	background-color: #00000040;
+	cursor: pointer;
+}
+.title{
+	margin-top: 20px;
+	border-bottom: 2px solid black;
+	font-size: 30px;
+/*	font-weight: initial;*/
+}
+.new_product{
+	height: 400px;
+	
+}
+.new_product li{
+	width: 288px;
+	height: 350px;
+	margin-right: 10px;
+	margin-left: 0px;
+/*	border: 1px solid red;*/
+	cursor: pointer;
+
+}
+.new_product li img{
+	width: 288px;
+	height: 300px;
+	background-size: 100% 100%;
+}
+.name , .price{
+	width: 100%;
+	height: 22px;
+	overflow: hidden;
+	text-align: center;
+	margin-bottom: 5px;
+
+}
+.price{
+	color: #f00;
+}
+.book , .sport , .phone , .recreation , .product_div{
+	width: 1200px;
+	/*height: 300px;*/
+/*	background-color: #999;*/
+	margin: 0 auto;
+	position: relative;
+}
+.classily_pic{
+	width: 370px;
+	height: 580px;
+	display: inline-block;
+}
+.product_ul{
+	display: inline-block;
+	width: 820px;
+	height: 600px;
+}
+.product{
+	width: 240px;
+/*	height: 240px;*/
+	margin:10px;
+	margin-left: 20px;
+	cursor:pointer;
+}
+.product img{
+	width: 240px;
+	height: 240px;
+	background-size: 100% 100%;
+
+}
+
+.bottom_bar, .page_bar{
+	height: 80px;
+	margin-top: 40px;
+	border-top: 2px solid #ff0036;
+}
+.bottom_bar div, .page_bar div{
+	display: inline-block;
+	width: 100%;
+	color: #999;
+	margin-top: 10px;
+
+}
+.bottom_bar li, .page_bar li{
+	margin-right: 20px;
+}
+
+.bottom_bar li a{
+	color: #999;
+}
+.nav_bar {
+	width: 50px;
+	height: 300px;
+	/*border: 1px solid red;*/
+	position: fixed;
+	bottom: 150px;
+	left:90px;
+
+}
+.nav_bar li{
+	width: 48px;
+	height: 40px;
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	background-color: #00000040;
+	margin-bottom: 5px;
+	line-height: 40px;
+	cursor:pointer;
+}
